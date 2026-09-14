@@ -23,4 +23,298 @@
         body {
             background-color: #f4f5f7;
             color: var(--text-color);
-   …
+            direction: rtl;
+        }
+
+        .top-bar {
+            background-color: var(--dark-color);
+            color: #fff;
+            padding: 8px 5%;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            color: var(--primary-color);
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        .logo span {
+            font-size: 11px;
+            color: #666;
+            margin-top: 3px;
+            font-weight: 600;
+        }
+
+        .search-box {
+            display: flex;
+            width: 45%;
+            max-width: 500px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid var(--border-color);
+            border-left: none;
+            border-radius: 0 6px 6px 0;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-box button {
+            background: var(--dark-color);
+            color: #fff;
+            border: none;
+            padding: 0 20px;
+            border-radius: 6px 0 0 6px;
+            cursor: pointer;
+        }
+
+        .phone-contact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            direction: ltr;
+        }
+
+        .phone-contact i {
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .cart-btn {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #fff;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding: 0 5%;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 12px 15px;
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            margin: 20px 5%;
+            background: linear-gradient(135deg, #111, #333);
+            color: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            margin: 30px 5%;
+        }
+
+        .cat-card {
+            background: #fff;
+            padding: 20px 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            font-weight: bold;
+        }
+
+        .cat-card i {
+            font-size: 30px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 20px 5% 40px 5%;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .product-card i {
+            font-size: 80px;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>📍 دهۆک - زانکۆیا دهۆک / کۆگەهێن فەرمی یێن VESTEL</span>
+        <span>خزمەتگوزاریا باشتر بۆ هەمی دەمان</span>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>VESTEL</h1>
+            <span>Daha İyi Bir Yaşam</span>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="گەران بۆ بەرهەمەکێ...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <div class="phone-contact">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div style="text-align: right;">
+                    <div style="font-size: 11px; color: #777;">پەیوەندی</div>
+                    <strong>0750 386 0254</strong>
+                </div>
+            </div>
+            <a href="#" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> سەتلا کڕینێ (0)</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#" style="color: var(--primary-color);">سەرەکی</a></li>
+            <li><a href="#">تەلەفزیۆن</a></li>
+            <li><a href="#">ساردکەرەوە</a></li>
+            <li><a href="#">فریج</a></li>
+            <li><a href="#">غەساله</a></li>
+            <li><a href="#">ئامێرێن مالێ</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>VESTEL DUHOK</h2>
+            <p>باشترین کۆالیتی بۆ ژیانی باشتر</p>
+        </div>
+        <i class="fa-solid fa-tv" style="font-size: 120px; color: rgba(255,255,255,0.2);"></i>
+    </section>
+
+    <section class="categories-grid">
+        <div class="cat-card"><i class="fa-solid fa-tv"></i><br>تەلەفزیۆن</div>
+        <div class="cat-card"><i class="fa-solid fa-snowflake"></i><br>ساردکەرەوە</div>
+        <div class="cat-card"><i class="fa-solid fa-kitchen-set"></i><br>فریج</div>
+        <div class="cat-card"><i class="fa-solid fa-soap"></i><br>غەساله</div>
+    </section>
+
+    <h2 style="margin: 20px 5% 10px 5%;">بەرهەمێن دیارکراو</h2>
+
+    <section class="products-grid">
+        <div class="product-card">
+            <i class="fa-solid fa-tv"></i>
+            <h3>Smart LED TV 55" 4K</h3>
+            <div class="product-price">$399</div>
+            <button class="add-to-cart">زیاده‌کرن بۆ سەتلا کڕینێ</button>
+        </div>
+        <div class="product-card">
+            <i class="fa-solid fa-wind"></i>
+            <h3>Air Conditioner 18000 BTU</h3>
+            <div class="product-price">$499</div>
+            <button class="add-to-cart">زیاده‌کرن بۆ سەتلا کڕینێ</button>
+        </div>
+        <div class="product-card">
+            <i class="fa-solid fa-box-archive"></i>
+            <h3>Refrigerator 350 L</h3>
+            <div class="product-price">$649</div>
+            <button class="add-to-cart">زیاده‌کرن بۆ سەتلا کڕینێ</button>
+        </div>
+        <div class="product-card">
+            <i class="fa-solid fa-arrows-spin"></i>
+            <h3>Washing Machine 7 kg</h3>
+            <div class="product-price">$449</div>
+            <button class="add-to-cart">زیاده‌کرن بۆ سەتلا کڕینێ</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>مافێن نڤێسینێ پاراستینە © VESTEL DUHOK - حجي محمد حسن بيسرى</p>
+    </footer>
+
+</body>
+</html>
